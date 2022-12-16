@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="../header.css">
+    <script src="page3.js"></script>
+    <script src="../logIn/page2.js"></script>
+</head>
+<body>
+
+<header>Sign Up</header>
+
+<form action="" class="my-form">
+    <div class="group">
+        <div class="form-group">
+            <div class="name"><label>Name:</label></div>
+            <input id="nameinput" type="text" name="name" placeholder="Enter your Name">
+            <div id="error6"></div>
+        </div>
+        <div class="form-group">
+            <div class="name"><label>Age:</label></div>
+            <input id="ageinput" type="number" name="name" placeholder="Enter your Age">
+            <div id="error7"></div>
+        </div>
+
+        <div class="form-group">
+            <div class="name"><label>Email:</label></div>
+            <input id="mailinput" type="email" name="name" placeholder="Enter your Email">
+            <div id="error3"></div>
+        </div>
+        <div class="form-group">
+            <div class="name"><label>About Me:</label></div>
+            <textarea id="descriptioninput" type="text" name="Description"></textarea>
+            <div id="error4"></div>
+        </div>
+    </div>
+
+    <div class="group">
+        <div class="form-group">
+            <div class="name"><label>Phone:</label></div>
+            <input id="phoneinput" type="number" name="name" placeholder="Enter your Phone">
+            <div id="error5"></div>
+        </div>
+        <div class="form-group">
+            <div class="name"><label>UserName:</label></div>
+            <input id="usernameinput" type="text" name="name" placeholder="Enter your UserName">
+            <div id="error1"></div>
+        </div>
+        <div class="form-group">
+            <div class="name"><label>Password:</label></div>
+            <input id="passwordinput" type="password" name="name" placeholder="Enter your Password">
+            <div id="error2"></div>
+        </div>
+    </div>
+</form>
+
+<div class="buttons">
+    <img class="button" src="../../Extras/createaccount.png" onclick="signUp()"
+         onmousemove="this.src='../../Extras/createpres.png'"
+         onmouseleave="this.src='../../Extras/createaccount.png'">
+</div>
+
+<div class="dog-container">
+    <img class="dog" src="../../Extras/inch.png">
+</div>
+
+</body>
+</html>

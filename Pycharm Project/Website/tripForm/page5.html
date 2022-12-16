@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>tripForm</title>
+    <link rel="stylesheet" href="../header.css">
+    <script src="page5.js"></script>
+    <script src="../signIn/page3.js"></script>
+</head>
+<body>
+
+<div class="nav">
+    <a class="active" href="../navigationPge/page4.html">Home</a>
+    <a href="../tripForm/page5.html">Trip Form</a>
+    <a href="../availableTrips/page6.html">New trips</a>
+    <a href="../requests/page8.html">My requests</a>
+    <a href="../myTrips/page7.html">My trips</a>
+
+</div>
+
+<header>Hi! Please sign a trip form:</header>
+
+<form action="" class="my-form">
+    <div class="group">
+        <div class="form-group">
+            <div class="name"><label>Name: </label></div>
+            <input id="nameinput" type="text" name="name" placeholder="Enter your Name">
+            <div id="error6"></div>
+        </div>
+        <div class="form-group">
+            <div class="name"><label>Phone: </label></div>
+            <input id="phoneinput" type="number" name="name" placeholder="Enter your Phone">
+            <div id="error5"></div>
+        </div>
+        <div class="form-group">
+            <div class="name"><label>Date: </label></div>
+            <input id="dateinput" type="date" name="dateinput" onchange="CheckD()">
+            <div id="error4"></div>
+        </div>
+        <div class="form-group">
+            <div class="desc"><label>Description: </label></div>
+            <textarea name="description"></textarea>
+        </div>
+    </div>
+
+    <div class="group">
+        <div class="form-group">
+            <div class="name"><label>Dog Name: </label></div>
+            <input id="doginput" type="text" name="name" placeholder="Enter Dog Name">
+            <div id="error3"></div>
+        </div>
+        <div class="form-group">
+            <div class="name"><label>Trip Price: </label></div>
+            <input id="priceinput" type="text" name="name" placeholder="Enter Trip Price">
+            <div id="error1"></div>
+        </div>
+        <div class="form-group">
+            <div class="name"><label>Address:</label></div>
+            <input id="addressinput" type="text" name="name" placeholder="Enter your Address">
+            <div id="error2"></div>
+        </div>
+        <div class="form-group">
+            <div class="name"><label>Beginning Time: </label></div>
+            <input id="beginput" type="time" name="name" placeholder="Choose Hour">
+            <div id="error8"></div>
+        </div>
+        <div class="form-group">
+            <div class="name"><label>End Time: </label></div>
+            <input id="endinput" type="time" name="name">
+            <div id="error9"></div>
+        </div>
+        <div class="form-group">
+            <div class="name"><label>Add dog image </label></div>
+            <input type="file" id="image-input" accept="image/jpeg, image/png, image/jpg">
+        </div>
+    </div>
+</form>
+
+<div class="buttons">
+    <img class="button" src="../../Extras/submit.png" onclick="submit()"
+         onmousemove="this.src='../../Extras/subpres.png'"
+         onmouseleave="this.src='../../Extras/submit.png'">
+</div>
+
+<div class="dog-container">
+    <img class="dog" src="../../Extras/inch.png">
+</div>
+
+</body>
+</html>
