@@ -1,0 +1,36 @@
+extends pagesLayout
+block content
+    if (trips.length)
+        table(cellspacing="50")
+            each t in trips
+                tr 
+                    td 
+                        text Date: 
+                        uns #{t.trip_date}
+                        br
+                        text Hours: 
+                        uns #{t.start_time} - #{t.end_time}
+                        br
+                        text About me: 
+                        uns #{t.about_me}
+                        br
+                    td 
+                        text Name: 
+                        uns #{t.name}
+                        br
+                        text Phone: 
+                        uns #{t.phone_number}
+                        br
+                        text Age: 
+                        uns #{t.age}
+
+                    td 
+                        div(class="buttons" ,type = submit)
+                                button(type="submit")
+                                    img(class="button" src="/images/Extras/approve.png")
+                        div(class="buttons")
+                                button(type="submit")
+                                    img(class="button" src="/images/Extras/dismiss.png")   
+    else
+        div() User does not have any requests for trips..
+                                
